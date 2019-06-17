@@ -1,0 +1,48 @@
+@import "../lib/variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+
+body {
+  display:flex;
+  justify-content: space-around;
+  width: 50%;
+  background-color: $rootColor;
+  font-family: 'Courier New', Courier, monospace;
+  div{
+    header {
+      display: flex;
+      justify-content: space-around;
+      h1 {
+        font-size: 20px;
+      }
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      background-color: $accentColor;
+      padding: 20px;
+      border: 2px black solid;
+      font-family: Fascinate Inline;
+      h4 {
+        // font-family: Fascinate Inline;
+        font-size: 100px;
+        align-self: center;
+        margin: auto;
+      }
+      a {
+        font-size: 40px;
+        text-decoration: none;
+        align-self: center;
+        color: black;
+        &:hover{
+          color: $rootColor;
+          font-weight: strong;
+        }
+      }
+    }
+    footer {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+  }
+}
